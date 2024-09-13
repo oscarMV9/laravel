@@ -20,7 +20,7 @@ class ProduccionController extends Controller
         
     }
 
-    public function pdf() {
+public function pdf() {
         $produccion = Produccion::all();
         $pdf = Pdf::loadView('produccion.pdf', compact('produccion'));
         return $pdf->stream();
