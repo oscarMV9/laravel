@@ -90,6 +90,39 @@
             flex-direction: column;
             align-items: center;
         }
+
+        td a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 0 5px;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+td a:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+
+td button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+td button:hover {
+    background-color: #c82333;
+}
+
 </style>
 <body>
     <div class="barra_navegacion">
@@ -141,8 +174,6 @@
                     <td>{{ $venta->precio_unitario }}</td>
                     <td>{{ $venta->precio_total }}</td>
                     <td>
-                        <a href="{{ route('ventas.show', $venta->id) }}">Ver</a>
-                        <a href="{{ route('ventas.edit', $venta->id) }}">Editar</a>
                         <form action="{{ route('ventas.destroy', $venta->id) }}" method="POST" style="display:inline;">
                             @csrf
                             @method('DELETE')
