@@ -12,20 +12,21 @@ body {
 }
 
 .cliente-info {
-    background: #fff;
     padding: 20px;
     border-radius: 8px;
+    backdrop-filter: blur(10px);
+    border: solid 2px #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
 }
 
 .cliente-info p {
     margin: 10px 0;
-    color: #333;
+    color: #000000;
 }
 
 .cliente-info strong {
-    color: #555;
+    color: #c7c2c2c9;
 }
 
 .back-link {

@@ -33,7 +33,7 @@
             <button type="submit" class="Btn">Guardar</button>
         </form>
         <div class="register-link">
-            <a href="{{ route('inventario.index') }}">Volver</a>
+            <a href="{{ route('inventario.index') }}" class="volver">Volver</a>
         </div>
     </div>
 </body>
