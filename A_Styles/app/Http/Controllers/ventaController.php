@@ -96,10 +96,10 @@ class ventaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Venta $ventas)
+    public function edit(ventas $ventas)
     {
         $inventarios = Inventario::all();
-        return view('ventas.edit', compact('venta', 'inventarios'));
+        return view('ventas.edit', compact('ventas', 'inventarios'));
     }
 
     /**
