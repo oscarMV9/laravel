@@ -162,7 +162,7 @@
                 <ul>
                     <li><a href="{{ url('/inicio_s') }}" class="link" active>INICIO DE SECCION</a></li>
                     <li><a href="{{ url('/register') }}" class="link">REGISTRESE</a></li>
-                    <li><a href="{{ url('/nosotro') }}" class="link">DE NOSOTROS</a></li>
+                    <li><a href="{{ url('/nosotros') }}" class="link">DE NOSOTROS</a></li>
                     <li><a href="{{ url('/contacto') }}" class="link">CONTACTO</a></li>
                 </ul>
             </div>

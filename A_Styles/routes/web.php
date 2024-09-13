@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/nosotros', function () {
+    return view('nosotros');
+});
+
 Route::get('/register', [RegisterController::class, 'showRegistrationForm'])->name('register');
 Route::post('/register', [RegisterController::class, 'register']);
 Route::get('/inicio_s', [LoginController::class, 'showLoginForm'])->name('login');
