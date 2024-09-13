@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: url('../imagenes/casa.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.imagen_logo{
+    width: 50px;
+    height: 50px;
+    margin-top: 25px;
+    border-radius: 34px;
+    border: 4px solid;
+}
+
+.barra_navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+    z-index: 100;
+}
+
+.logo p{
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.navegacion_menu ul{
+    display: flex;
+}
+
+.navegacion_menu ul li{
+    list-style-type: none;
+}
+
+.navegacion_menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.link:hover, active{
+    border-bottom: 2px solid #fff;
+}
+
+.div_zapatos img{
+    width: 200px; 
+    height: auto;
+    border-radius: 15px;
+    border: 4px;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    );
+}
+
+.div_zapatos{
+    width: 350px;
+    height: 350px;
+    margin: 0% 20%;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 4px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+  
+  .titulo_zapatos {
+    margin-bottom: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    background: linear-gradient(
+        to right,
+        #fcfcfc 20%,
+        #242517 40%,
+        #718021 60%,
+        #fcfcfc 80%
+    );
+    animation: shine 6s linear infinite;
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+  .div_zapatos .contenido_zapatos .ver_zapatos{
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    border:none;
+    background: #fff;
+    outline: none;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+  .div_zapatos .contenido_zapatos .ver_zapatos:hover{
+    background-color: black;
+    color: #fff;
+}
+  
+  .div_zapatos .contenido_zapatos .imagen_zapatos {
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, .2);
+    margin-top: 20px;
+
+}
+
+.div_ropaniños img{
+    width: 200px; 
+    height: auto;
+    border-radius: 15px;
+    border: 4px;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    );
+}
+
+.div_ropaniños{
+    width: 350px;
+    height: 350px;
+    margin: 4% 20%;
+    align-items: center;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 4px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.5);
+}
+  
+  .titulo_niños {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 20px;
+    background: linear-gradient(
+        to right,
+        #fcfcfc 20%,
+        #3ab984 40%,
+        #718021 60%,
+        #fcfcfc 80%
+    );
+    animation: shine 6s linear infinite;
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+}
+
+  .div_ropaniños .contenido_niños .ver_niños{
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    border:none;
+    background: #fff;
+    outline: none;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+  .div_ropaniños .contenido_niños .ver_niños:hover{
+    background-color: black;
+    color: #fff;
+}
+  
+  .div_ropaniños .contenido_niños .imagen_niños {
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, .2);
+    margin-top: 20px;
+
+}
+
+.div_ropaadultos{
+    margin: 4% 51.5%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    width: 350px;
+    height: 350.2px;
+    text-align: center;
+    margin-top: -61.5%;
+    border: 4px solid #ccc;
+    border-radius: 6px;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.div_ropaadultos img{
+    width: 200px; 
+    height: auto;
+    border-radius: 15px;
+    border: 4px;
+    margin-top: 20px;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    );
+}
+
+.titulo_adultos{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 35px;
+    background: linear-gradient(
+        to right,
+        #fcfcfc 20%,
+        #242517 40%,
+        #b3601c 60%,
+        #fcfcfc 80%
+    );
+    animation: shine 6s linear infinite;
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.div_ropaadultos .contenido_adultos .ver_adultos{
+    margin-top: 45px;
+    width: 200px;
+    height: 30px;
+    border:none;
+    background: #fff;
+    outline: none;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.div_ropaadultos .contenido_adultos .ver_adultos:hover{
+    background-color: black;
+    color: #fff;
+}
+
+.div_accesorios img{
+    width: 200px; 
+    height: auto;
+    border-radius: 15px;
+    border: 4px;
+    margin-top: 20px;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    ); 
+}
+
+.div_accesorios{
+    background-color: transparent;
+    width: 350px;
+    height: 350.2px;
+    margin: 4% 51.5%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: solid 4px #ccc;
+    border-radius: 6px;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.titulo_accesorios{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 35px;
+    background: linear-gradient(
+        to right,
+        #fcfcfc 20%,
+        #242517 40%,
+        #9522a0 60%,
+        #fcfcfc 80%
+    );
+    animation: shine 6s linear infinite;
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+}
+
+.div_accesorios .contenido_accsesorios .ver_accsesorios{
+    margin-top: 45px;
+    width: 200px;
+    height: 30px;
+    border:none;
+    background: #fff;
+    outline: none;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.div_accesorios .contenido_accsesorios .ver_accsesorios:hover{
+    background-color: black;
+    color: #fff;
+}
+
+
+.div_conjuntos img{
+    width: 200px; 
+    height: auto;
+    border-radius: 15px;
+    border: 4px;
+    margin-top: 20px;
+    filter: drop-shadow(
+        0 0 10px rgba(0, 0, 0, .8)
+    );
+}
+
+.div_conjuntos{
+    background-color: transparent;
+    width: 350px;
+    height: 350.2px;
+    margin: 4% 35%;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    border: solid 4px #ccc;
+    border-radius: 6px;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.titulo_conjuntos{
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 35px;
+    background: linear-gradient(
+        to right,
+        #fcfcfc 20%,
+        #242517 40%,
+        #d62828 60%,
+        #fcfcfc 80%
+    );
+    animation: shine 6s linear infinite;
+    background-size: 200%;
+    background-clip: text;
+    color: transparent;
+}
+
+.div_conjuntos .contenido_conjuntos .ver_conjuntos{
+    margin-top: 45px;
+    width: 200px;
+    height: 30px;
+    border:none;
+    background: #fff;
+    outline: none;
+    border-radius: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.div_conjuntos .contenido_conjuntos .ver_conjuntos:hover{
+    background-color: black;
+    color: #fff;
+}
